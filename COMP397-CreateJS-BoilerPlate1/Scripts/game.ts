@@ -25,7 +25,7 @@ var manifest = [
 
 // Game Variables
 var helloLabel: createjs.Text; // create a reference
-var hello2: createjs.Text;
+var helloLabel2: createjs.Text;
 //create A refrence
 var Button: objects.Button;
 
@@ -87,37 +87,195 @@ function gameLoop() {
 // Callback function that allows me to respond to button click events
 function pinkButtonClicked(event: createjs.MouseEvent) {
     createjs.Sound.play("clicked");
+
+    var first = Math.floor(Math.random() * 6 + 1);
+    var second = Math.floor(Math.random() * 6 + 1);
+    console.log(first);
+    console.log(second);
+    if (first == 1) {
+        one = new objects.Button(assets.getResult("one"), 80, 190);
+        stage.addChild(one);
+        stage.removeChild(helloLabel);
+        helloLabel = new createjs.Text(first.toString(), "20px Consolas", "#000000");
+        helloLabel.regX = helloLabel.getMeasuredWidth() * 0.5;
+        helloLabel.regY = helloLabel.getMeasuredHeight() * 0.5;
+        helloLabel.x = 80;
+        helloLabel.y = 270;
+        stage.addChild(helloLabel);
+
+    } if (first == 2) {
+        two = new objects.Button(assets.getResult("two"), 80, 190);
+        stage.addChild(two);
+        stage.removeChild(helloLabel);
+        helloLabel = new createjs.Text(first.toString(), "20px Consolas", "#000000");
+        helloLabel.regX = helloLabel.getMeasuredWidth() * 0.5;
+        helloLabel.regY = helloLabel.getMeasuredHeight() * 0.5;
+        helloLabel.x = 80;
+        helloLabel.y = 270;
+        stage.addChild(helloLabel);
+
+    } if (first == 3) {
+        three = new objects.Button(assets.getResult("three"), 80, 190);
+        stage.addChild(three);
+        stage.removeChild(helloLabel);
+        helloLabel = new createjs.Text(first.toString(), "20px Consolas", "#000000");
+        helloLabel.regX = helloLabel.getMeasuredWidth() * 0.5;
+        helloLabel.regY = helloLabel.getMeasuredHeight() * 0.5;
+        helloLabel.x = 80;
+        helloLabel.y = 270;
+        stage.addChild(helloLabel);
+
+    } if (first == 4) {
+        four = new objects.Button(assets.getResult("four"), 80, 190);
+        stage.addChild(four);
+        stage.removeChild(helloLabel);
+        helloLabel = new createjs.Text(first.toString(), "20px Consolas", "#000000");
+        helloLabel.regX = helloLabel.getMeasuredWidth() * 0.5;
+        helloLabel.regY = helloLabel.getMeasuredHeight() * 0.5;
+        helloLabel.x = 80;
+        helloLabel.y = 270;
+        stage.addChild(helloLabel);
+
+    }
+    if (first == 5) {
+        five = new objects.Button(assets.getResult("five"), 80, 190);
+        stage.addChild(five);
+        stage.removeChild(helloLabel);
+        helloLabel = new createjs.Text(first.toString(), "20px Consolas", "#000000");
+        helloLabel.regX = helloLabel.getMeasuredWidth() * 0.5;
+        helloLabel.regY = helloLabel.getMeasuredHeight() * 0.5;
+        helloLabel.x = 80;
+        helloLabel.y = 270;
+        stage.addChild(helloLabel);
+
+    } if (first == 6) {
+        six = new objects.Button(assets.getResult("six"), 80, 190);
+        stage.addChild(six);
+        stage.removeChild(helloLabel);
+        helloLabel = new createjs.Text(first.toString(), "20px Consolas", "#000000");
+        helloLabel.regX = helloLabel.getMeasuredWidth() * 0.5;
+        helloLabel.regY = helloLabel.getMeasuredHeight() * 0.5;
+        helloLabel.x = 80;
+        helloLabel.y = 270;
+        stage.addChild(helloLabel);
+    }
+
+    if (second == 1) {
+        one = new objects.Button(assets.getResult("one"), 180, 190);
+        stage.addChild(one);
+        stage.removeChild(helloLabel2);
+        helloLabel2 = new createjs.Text(second.toString(), "20px Consolas", "#000000");
+        helloLabel2.regX = helloLabel.getMeasuredWidth() * 0.5;
+        helloLabel2.regY = helloLabel.getMeasuredHeight() * 0.5;
+        helloLabel2.x = 180;
+        helloLabel2.y = 270;
+        stage.addChild(helloLabel2);
+
+    } if (second == 2) {
+        two = new objects.Button(assets.getResult("two"), 180, 190);
+        stage.addChild(two);
+        stage.removeChild(helloLabel2);
+        helloLabel2 = new createjs.Text(second.toString(), "20px Consolas", "#000000");
+        helloLabel2.regX = helloLabel.getMeasuredWidth() * 0.5;
+        helloLabel2.regY = helloLabel.getMeasuredHeight() * 0.5;
+        helloLabel2.x = 180;
+        helloLabel2.y = 270;
+        stage.addChild(helloLabel2);
+
+    } if (second == 3) {
+        three = new objects.Button(assets.getResult("three"), 180, 190);
+        stage.addChild(three);
+        stage.removeChild(helloLabel2);
+        helloLabel2 = new createjs.Text(second.toString(), "20px Consolas", "#000000");
+        helloLabel2.regX = helloLabel.getMeasuredWidth() * 0.5;
+        helloLabel2.regY = helloLabel.getMeasuredHeight() * 0.5;
+        helloLabel2.x = 180;
+        helloLabel2.y = 270;
+        stage.addChild(helloLabel2);
+
+    } if (second == 4) {
+        four = new objects.Button(assets.getResult("four"), 180, 190);
+        stage.addChild(four);
+        stage.removeChild(helloLabel2);
+        helloLabel2 = new createjs.Text(second.toString(), "20px Consolas", "#000000");
+        helloLabel2.regX = helloLabel.getMeasuredWidth() * 0.5;
+        helloLabel2.regY = helloLabel.getMeasuredHeight() * 0.5;
+        helloLabel2.x = 180;
+        helloLabel2.y = 270;
+        stage.addChild(helloLabel2);
+
+    }
+    if (second == 5) {
+        five = new objects.Button(assets.getResult("five"), 180, 190);
+        stage.addChild(five);
+        stage.removeChild(helloLabel2);
+        helloLabel2 = new createjs.Text(second.toString(), "20px Consolas", "#000000");
+        helloLabel2.regX = helloLabel.getMeasuredWidth() * 0.5;
+        helloLabel2.regY = helloLabel.getMeasuredHeight() * 0.5;
+        helloLabel2.x = 180;
+        helloLabel2.y = 270;
+        stage.addChild(helloLabel2);
+
+    } if (second == 6) {
+        six = new objects.Button(assets.getResult("six"), 180, 190);
+        stage.addChild(six);
+        stage.removeChild(helloLabel2);
+        helloLabel2 = new createjs.Text(second.toString(), "20px Consolas", "#000000");
+        helloLabel2.regX = helloLabel.getMeasuredWidth() * 0.5;
+        helloLabel2.regY = helloLabel.getMeasuredHeight() * 0.5;
+        helloLabel2.x = 180;
+        helloLabel2.y = 270;
+        stage.addChild(helloLabel2);
+    }
+
+
+
 }
+
 
 // Callback functions that change the alpha transparency of the button
 
 // Mouseover event
 function pinkButtonOver() {
-    pinkButton.alpha = 0.8;
+    Button.alpha = 0.8;
 }
 
 // Mouseout event
 function pinkButtonOut() {
-    pinkButton.alpha = 1.0;
+    Button.alpha = 1.0;
 }
 
 // Our Main Game Function
 function main() {
     console.log("Game is Running");
-    helloLabel = new createjs.Text("Hello World!", "40px Consolas", "#000000");
+   
+    Button = new objects.Button(assets.getResult("Button"), 140, 370);
+    stage.addChild(Button);
+    Button.on("click", pinkButtonClicked);
+
+
+
+    //sides of dice to display when game starts
+    one = new objects.Button(assets.getResult("one"), 80, 190);
+    stage.addChild(one);
+    stage.removeChild(helloLabel);
+    helloLabel = new createjs.Text("1", "20px Consolas", "#000000");
     helloLabel.regX = helloLabel.getMeasuredWidth() * 0.5;
     helloLabel.regY = helloLabel.getMeasuredHeight() * 0.5;
-    helloLabel.x = 160;
-    helloLabel.y = 190;
+    helloLabel.x = 80;
+    helloLabel.y = 270;
     stage.addChild(helloLabel);
 
-    pinkButton = new createjs.Bitmap(assets.getResult("pinkButton"));
-    pinkButton.regX = pinkButton.getBounds().width * 0.5;
-    pinkButton.regY = pinkButton.getBounds().height * 0.5;
-    pinkButton.x = 160;
-    pinkButton.y = 270;
-    stage.addChild(pinkButton);
-    pinkButton.on("click", pinkButtonClicked);
-    pinkButton.on("mouseover", pinkButtonOver);
-    pinkButton.on("mouseout", pinkButtonOut);
+
+    two = new objects.Button(assets.getResult("two"), 180, 190);
+    stage.addChild(two);
+
+    stage.removeChild(helloLabel2);
+    helloLabel2 = new createjs.Text("2", "20px Consolas", "#000000");
+    helloLabel2.regX = helloLabel.getMeasuredWidth() * 0.5;
+    helloLabel2.regY = helloLabel.getMeasuredHeight() * 0.5;
+    helloLabel2.x = 180;
+    helloLabel2.y = 270;
+    stage.addChild(helloLabel2);
+
 }
